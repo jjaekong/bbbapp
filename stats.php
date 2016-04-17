@@ -39,7 +39,7 @@
                     </li>
                     <li class="ui-block-b">
                         <div>
-                            <a href="http://daum.net" target="_blank">
+                            <a href="/story_write.php" data-transition="pop">
                                 <strong>봉사 이야기<br>작성하러 가기</strong>
                             </a>
                         </div>
@@ -84,7 +84,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <a href="#" class="ui-btn btn-more">더보기(1/10)</a>
+                <a href="#" class="ui-btn btn-more btn-linear">더보기(1/10)</a>
             </div>
         </div>
     </div>

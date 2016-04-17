@@ -54,12 +54,12 @@
             </div>
             <div id="nav" data-role="navbar" class="ui-navbar" data-grid="b">
                 <ul>
-                    <li><a href="/bbbid.php" data-transition="pop">bbb ID</a></li>
-                    <li><a href="/stats.php" data-transition="pop">통계</a></li>
-                    <li><a href="/note_main.php" data-transition="pop">쪽지</a></li>
-                    <li><a href="/news.php" data-transition="pop">bbb 소식통</a></li>
-                    <li><a href="/story.php" data-transition="pop">봉사 이야기</a></li>
-                    <li><a href="/mypage.php" data-transition="pop">마이 페이지</a></li>
+                    <li><a href="/bbbid.php" data-transition="pop" data-ajax="false">bbb ID</a></li>
+                    <li><a href="/stats.php" data-transition="pop" data-ajax="false">통계</a></li>
+                    <li><a href="/note_main.php" data-transition="pop" data-ajax="false">쪽지</a></li>
+                    <li><a href="/news_list.php" data-transition="pop" data-ajax="false">bbb 소식통</a></li>
+                    <li><a href="/story_list.php" data-transition="pop" data-ajax="false">봉사 이야기</a></li>
+                    <li><a href="/mypage.php" data-transition="pop" data-ajax="false">마이 페이지</a></li>
                 </ul>
             </div>
         </div>
@@ -75,19 +75,26 @@
             <hr>
             <a href="#" class="ui-btn btn-close" data-rel="back" data-transition="flow"><img src="/images/btn_close.png" alt="닫기"></a>
         </div>
+        
+        <script>
+            $(".main").on("pageshow", function(event, ui) {
+                var slider = null;
+                if ( $('.bx-wrapper').length < 1 ) {
+                    slider = $('.bxslider').bxSlider({
+                        slideSelector: 'div',
+                        pager: true,
+                        controls: false,
+                        adaptiveHeight: 325
+                    });
+                } else {
+                    if (slider !== null) {
+                        slider.reloadSlider();
+                    }
+                }
+            });
+        </script>
  
     </div>
-    
-    <script>
-        $(window).on('load', function() {
-            $('.bxslider').bxSlider({
-                slideSelector: 'div',
-                pager: true,
-                controls: false,
-                adaptiveHeight: 325
-            });
-        });
-    </script>
     
 </body>
 </html>
