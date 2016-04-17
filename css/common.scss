@@ -11,6 +11,8 @@
           box-sizing: border-box;
           text-shadow: none;
 }
+*::-webkit-input-placeholder {
+}
 body {
     font-family: 'Open Sans', sans-serif;
     // text-shadow: none;
@@ -101,7 +103,9 @@ figure {
     input[type="email"],
     input[type="password"],
     input[type="date"],
-    input[type="file"] {
+    input[type="file"],
+    input[type="number"],
+    input[type="time"] {
         min-height: 28px;
         padding: 15px 20px;
         line-height: 28px;
@@ -146,6 +150,7 @@ textarea.ui-input-text {
 
 // 메인
 .main {
+    background-color: #fff;
     #header {
         position: relative;
         height: 325px;
@@ -279,6 +284,11 @@ textarea.ui-input-text {
                     letter-spacing: -1px;
                     word-spacing: -1px;
                     color: #87817a;
+                    background-color: #fff;
+                    &.ui-btn-active {
+                        background-color: rgba(#ff7214, .2) !important;
+                        border-color: rgba(#ff7214, .2) !important;
+                    }
                 }
                 &:nth-of-type(1),
                 &:nth-of-type(2),
@@ -456,6 +466,15 @@ textarea.ui-input-text {
                 height: 35px; //18px;
                 padding-left: 5px;
                 padding-right: 5px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            &.btn-back {
+                left: 11px;
+                width: 35px; //17px;
+                height: 35px; //17px;
+                padding-left: 8px;
+                padding-right: 8px;
                 padding-top: 8px;
                 padding-bottom: 8px;
             }
@@ -727,6 +746,7 @@ textarea.ui-input-text {
 
 // 쪽지
 .note {
+    background-color: #fff;
     .section-header {
         p {
             letter-spacing: -1px;
@@ -1194,6 +1214,535 @@ textarea.ui-input-text {
                     background-size: 6px auto;
                     background-position: 90% 50%; 
                 }
+            }
+        }
+    }
+}
+
+// 마이페이지
+.mypage {
+    form {
+        ::-webkit-input-placeholder {
+            color: #6e6253;
+        }
+        fieldset {
+            position: relative;
+            display: block;
+            padding: 50px 15px 15px;
+            border-bottom: 1px solid #ddd6cd;
+            background-color: #f2efeb;
+            background-clip: border-box;
+            legend {
+                position: absolute;
+                top: 15px;
+                font-size: 16px;
+                color: #6e6253;
+                font-weight: bold;
+                background-color: #f2efeb;
+                &.required {
+                    color: #ff7214;
+                }
+            }
+            label {
+                margin-bottom: 5px;
+                font-size: 14px;
+                color: #6e6253;
+                font-weight: bold;
+                letter-spacing: -1px;
+            }
+            .ui-select {
+                margin-bottom: 10px;
+                .ui-btn {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 13px;
+                    line-height: 23px;
+                    border-color: #cbc3ba;
+                    text-shadow: none;
+                }
+            }
+            .ui-input-text {
+                margin-bottom: 10px;
+                border-color: #cbc3ba;
+                text-shadow: none;
+                input {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 13px;
+                    line-height: 23px;
+                }
+                &.ui-state-disabled {
+                    opacity: 1;
+                    background-color: #e5e1dc;
+                }
+            }
+            > .ui-btn {
+                margin-top: 0;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 13px;
+                line-height: 23px;
+                &.ui-shadow {
+                    box-shadow: none;
+                    background-color: #9e8a77;
+                    border-color: #9e8a77;
+                    color: #fff;
+                }
+            }
+        }
+        .help-block {
+            font-size: 13px;
+            color: #6c6760;
+            line-height: 1.6em;
+        }
+        .info-block {
+            margin-bottom: 10px;
+            padding: 10px 10px 10px 35px;
+            background-color: #9e8a77;
+            color: #fff;
+            background-image: url(/images/ico_info_circle.png);
+            background-size: 15px 15px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+        }
+    }
+    &.main {
+        .mypage-main {
+            ul {
+                margin: 0;
+                li {
+                    a {
+                        padding: 20px;
+                        border-top-color: #e9e4de;
+                        border-bottom-color: #e9e4de;
+                        font-size: 16px;
+                        background-color: #fff;
+                        &:after {
+                            background-image: url(/images/ico_arrow_r.png);
+                            background-color: transparent;
+                            background-size: 8px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.edit-info {
+        .edit-info-form {
+            .info-username {
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 100%;
+                height: 100px;
+                line-height: 50px;
+                font-size: 14px;
+                font-weight: bold;
+                dt {
+                    float: left;
+                    clear: left;
+                    padding-left: 15px;
+                    width: 80px;
+                    height: 50px;
+                    border-top: 1px solid #e9e4de;
+                    color: #6e6253;
+                    &:nth-of-type(1) {
+                        border-top: 0;
+                    }
+                }
+                dd {
+                    height: 50px;
+                    width: 100%;
+                    margin-left: 80px;
+                    border-top: 1px solid #e9e4de;
+                    color: #000;
+                    &:nth-of-type(1) {
+                        border-top: 0;
+                    }
+                }
+            }
+            
+            .btn-area {
+                padding: 20px 15px;
+                .ui-block-a {
+                    padding-right: 10px;
+                }
+                .ui-block-b {
+                    padding-left: 10px;
+                }
+                .ui-btn {
+                    width: 100%;
+                    height: 45px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+    &.edit-pw {
+        background-color: #f2efeb;
+        .section-header {
+            background-color: #fff;
+            p {
+                color: #6e6253;
+            }
+        }
+        .btn-area {
+            padding: 20px 15px;
+            .ui-btn {
+                height: 45px;
+            }
+        }
+    }
+    &.stop-service {
+        .section-header {
+            background-color: #fff;
+            padding-bottom: 30px;
+            p {
+                color: #6e6253;
+                i {
+                    font-style: normal;
+                    color: #ff7214;
+                }
+            }
+        }
+        .disable-service-form,
+        .stop-service-form {
+            fieldset {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+            .btn-area {
+                background-color: #F2EFEB;
+                padding: 20px 15px;
+                .ui-btn {
+                    height: 45px;
+                }
+            }
+        }
+        .disable-service-form {
+            border-bottom: 1px solid #ccc;
+        }
+        
+    }
+    &.restart-service {
+        background-color: #f2efeb;
+        .section-header {
+            background-color: #fff;
+            p {
+                color: #6e6253;
+                i {
+                    font-style: normal;
+                    color: #ff7214;
+                }
+            }
+        }
+    }
+    &.service-terms {
+        .terms-area {
+            padding: 20px 15px;
+            h2 {
+                margin-top: 0;
+                color: #ff7214;
+                font-size: 18px;
+            }
+            h3 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                color: #6e6253;
+                border-bottom: 1px solid #6e6253;
+            }
+            h4 {
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            p {
+                line-height: 1.6em;
+                color: #666;
+            }
+        }
+    }
+    &.set-config {
+        .confirm-form {
+            .ui-field-contain {
+                overflow: hidden;
+                padding: 15px;
+                border-bottom: 1px solid #eae5df;
+                label {
+                    float: left;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: -1px;
+                    line-height: 37px;
+                }
+                .flipswitch-wrap {
+                    float: right;
+                    overflow: hidden;
+                    width: 69px;
+                    height: 37px;
+                }
+                .ui-flipswitch {
+                    overflow: visible;
+                    margin: 3px;
+                    width: 60px;
+                    height: 30px;
+                    border-radius: 15px;
+                    border: 0;
+                    box-shadow: none;
+                    &.ui-flipswitch-active {
+                        padding-left: 30px;
+                        background-color: #ff7214;
+                    }
+                    > .ui-btn {
+                        top: -3px;
+                        left: -3px;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        border: 0;
+                        background-color: #fff;
+                        text-indent: -22px;
+                        line-height: 33px;
+                        font-size: 12px;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        &.ui-shadow {
+                            box-shadow: 1px 1px 1px rgba(0, 0, 0, .5) !important;
+                        }
+                    }
+                    .ui-flipswitch-off {
+                        margin: 0;
+                        color: #666;
+                        width: auto;
+                        text-indent: -2px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        letter-spacing: -1px;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 아이디/비번 찾기
+.find {
+    background-color: #f2efeb;
+    form {
+        ::-webkit-input-placeholder {
+            color: #6e6253;
+        }
+        fieldset {
+            position: relative;
+            display: block;
+            padding: 50px 15px 15px;
+            border-bottom: 1px solid #ddd6cd;
+            background-color: #f2efeb;
+            background-clip: border-box;
+            legend {
+                position: absolute;
+                top: 15px;
+                font-size: 16px;
+                color: #6e6253;
+                font-weight: bold;
+                background-color: #f2efeb;
+                &.required {
+                    color: #ff7214;
+                }
+            }
+            label {
+                margin-bottom: 5px;
+                font-size: 14px;
+                color: #6e6253;
+                font-weight: bold;
+                letter-spacing: -1px;
+            }
+            .ui-select {
+                margin-bottom: 10px;
+                .ui-btn {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 13px;
+                    line-height: 23px;
+                    border-color: #cbc3ba;
+                    text-shadow: none;
+                }
+            }
+            .ui-input-text {
+                margin-bottom: 10px;
+                border-color: #cbc3ba;
+                text-shadow: none;
+                input {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 13px;
+                    line-height: 23px;
+                }
+                &.ui-state-disabled {
+                    opacity: 1;
+                    background-color: #e5e1dc;
+                }
+            }
+            > .ui-btn {
+                margin-top: 0;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 13px;
+                line-height: 23px;
+                &.ui-shadow {
+                    box-shadow: none;
+                    background-color: #9e8a77;
+                    border-color: #9e8a77;
+                    color: #fff;
+                }
+            }
+        }
+        .help-block {
+            font-size: 13px;
+            color: #6c6760;
+            line-height: 1.6em;
+        }
+        .info-block {
+            margin-bottom: 10px;
+            padding: 10px 10px 10px 35px;
+            background-color: #9e8a77;
+            color: #fff;
+            background-image: url(/images/ico_info_circle.png);
+            background-size: 15px 15px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+        }
+    }
+    .section-header {
+        border-bottom: 1px solid #ded7ce;
+        background-color: #fff;
+        h2 {
+            color: #6e6253;
+            font-size: 18px;
+            letter-spacing: -1px;
+            font-weight: normal;
+        }
+        p {
+            color: #666!important;
+            font-size: 13px!important;
+            line-height: 1.8em;
+        }
+    }
+    .ui-navbar {
+        .ui-link {
+            border: 0;
+            padding: 0;
+            height: 60px;
+            line-height: 60px;
+            color: #aea394;
+            background-color: #ddd6cd;
+            font-size: 14px;
+        }
+        .ui-tabs-active {
+            .ui-link {
+                color: #6e6253 !important;
+                background-color: #f2efeb !important;
+            }
+        }
+    }
+    .find-form {
+        fieldset {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        .btn-area {
+            padding: 20px 15px;
+            background-color: #f2efeb;
+            .ui-block-a {
+                padding-right: 10px;
+            }
+            .ui-block-b {
+                padding-left: 10px;
+            }
+            .ui-btn {
+                height: 45px;
+                line-height: 45px;
+            }
+        }
+        &.find-id-email,
+        &.find-pw-email {
+            border-bottom: 1px solid #ddd6cd;
+        }
+    }
+}
+
+// 로그인
+.login {
+    background-image: url(/images/bg_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    #header {
+        padding-top: 120px;
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        .logo {
+            margin-bottom: 15px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        p {
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+    .login-form {
+        margin: 30px auto 0;
+        max-width: 200px;
+        ::-webkit-input-placeholder {
+            color: #fff;
+        }
+        .ui-input-text {
+            margin-bottom: 40px;
+            border-radius: 0;
+            background-color: transparent;
+            border: {
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            text-shadow: none;
+            &.ui-focus {
+                border-color: #fff;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            input {
+                padding: 0;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+        .help-find {
+            margin-bottom: 45px;
+            text-align: right;
+            a {
+                display: block;
+                padding: 15px;
+                font-size: 13px;
+                color: #fff;
+                text-decoration: none;
+                font-weight: normal;
+                background-image: url(/images/ico_arrow_r_xs.png);
+                background-size: 5px auto;
+                background-repeat: no-repeat;
+                background-position: 100% 50%;
+            }
+        }
+        .btn-area {
+            .ui-btn {
+                height: 55px;
             }
         }
     }

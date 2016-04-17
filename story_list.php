@@ -1,6 +1,6 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/dochead.php'); ?>
 <body>
-    <div data-role="page" class="sub story list" id="story-list">
+    <div data-role="page" class="sub story list">
         <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
             <a href="/" class="btn-home" data-role="back"><img src="/images/ico_home.png" alt="홈"></a>
             <h1 class="ui-title" role="heading" aria-level="1">봉사 이야기</h1>

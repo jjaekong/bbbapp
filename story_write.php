@@ -1,6 +1,6 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/dochead.php'); ?>
 <body>
-    <div data-role="page" class="sub story write" id="story-write">
+    <div data-role="page" class="sub story write">
         <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
             <a href="/" class="btn-home" data-role="back"><img src="/images/ico_home.png" alt="홈"></a>
             <h1 class="ui-title" role="heading" aria-level="1">봉사 이야기</h1>
@@ -28,10 +28,10 @@
                     </select>
                     
                     <label for="story-date" class="ui-hidden-accessible">날짜</label>
-                    <input type="date" name="#" id="story-date">
+                    <input type="date" name="#" id="story-date" placeholder="날짜">
                     
                     <label for="story-attach" class="ui-hidden-accessible">첨부파일</label>
-                    <input type="file" name="#" id="story-attach">
+                    <input type="file" name="#" id="story-attach" placeholder="첨부파일">
 
                     <label for="story-title" class="ui-hidden-accessible">제목</label>
                     <input type="text" name="#" id="story-title" placeholder="제목">

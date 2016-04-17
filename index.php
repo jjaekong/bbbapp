@@ -54,12 +54,12 @@
             </div>
             <div id="nav" data-role="navbar" class="ui-navbar" data-grid="b">
                 <ul>
-                    <li><a href="/bbbid.php" data-transition="pop" data-ajax="false">bbb ID</a></li>
-                    <li><a href="/stats.php" data-transition="pop" data-ajax="false">통계</a></li>
-                    <li><a href="/note_main.php" data-transition="pop" data-ajax="false">쪽지</a></li>
-                    <li><a href="/news_list.php" data-transition="pop" data-ajax="false">bbb 소식통</a></li>
+                    <li><a href="/bbbid.php" data-transition="pop">bbb ID</a></li>
+                    <li><a href="/stats.php" data-transition="pop">통계</a></li>
+                    <li><a href="/note_main.php" data-transition="pop">쪽지</a></li>
+                    <li><a href="/news_list.php" data-transition="pop">bbb 소식통</a></li>
                     <li><a href="/story_list.php" data-transition="pop" data-ajax="false">봉사 이야기</a></li>
-                    <li><a href="/mypage.php" data-transition="pop" data-ajax="false">마이 페이지</a></li>
+                    <li><a href="/mypage_main.php" data-transition="pop">마이 페이지</a></li>
                 </ul>
             </div>
         </div>
