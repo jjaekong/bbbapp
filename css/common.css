@@ -302,7 +302,8 @@ textarea.ui-input-text {
         background-repeat: no-repeat;
         background-position: 15px 50%;
         font-size: 12px;
-        line-height: 35px; }
+        line-height: 35px;
+        letter-spacing: -1px; }
     .main #nav .news > .btn-more {
       position: absolute;
       top: 10px;
