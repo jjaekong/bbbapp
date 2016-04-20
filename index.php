@@ -57,10 +57,16 @@
                     <li><a href="/bbbid.php" data-transition="pop">bbb ID</a></li>
                     <li><a href="/stats.php" data-transition="pop">통계</a></li>
                     <li><a href="/note_main.php" data-transition="pop">쪽지</a></li>
-                    <li><a href="/news_list.php" data-transition="pop">bbb 소식통</a></li>
+                    <li><a href="/milestone.php" data-transition="pop">마일스톤</a></li>
                     <li><a href="/story_list.php" data-transition="pop" data-ajax="false">봉사 이야기</a></li>
                     <li><a href="/mypage_main.php" data-transition="pop">마이 페이지</a></li>
                 </ul>
+                <div class="news">
+                    <p>
+                        <a href="/news_list.php">bbb 프로보노는 소통의 세상을 만들기 위해 지식•재능 나눔...</a>
+                    </p>
+                    <a href="/news_list.php" class="ui-link btn-more">목록보기</a>
+                </div>
             </div>
         </div>
         

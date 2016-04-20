@@ -330,8 +330,8 @@ textarea.ui-input-text {
                 }
                 &:nth-of-type(4) {
                     a {
-                        background-image: url(/images/ico_paper.png);
-                        background-size: 34px auto;
+                        background-image: url(/images/ico_badge.png);
+                        background-size: 40px auto;
                         background-repeat: no-repeat;
                         background-position: 50% 31px;
                     }
@@ -354,6 +354,48 @@ textarea.ui-input-text {
                 }
             }
         } 
+        .news {
+            position: relative;
+            padding: 10px;
+            height: 55px;
+            p {
+                padding-right: 90px;
+                a {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 35px;
+                    border: 0;
+                    background-color: #fff;
+                    background-image: url(/images/ico_paper_orange.png);
+                    background-size: auto 14px;
+                    background-repeat: no-repeat;
+                    background-position: 15px 50%;
+                    font-size: 12px;
+                    line-height: 35px;
+                }
+            }
+            > .btn-more {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 0 0 0 15px;
+                width: 80px;
+                height: 35px;
+                background-color: #efece9;
+                font-size: 12px;
+                color: #6a594a;
+                border: 0;
+                line-height: 35px;
+                background-image: url(/images/ico_plus.png);
+                background-repeat: no-repeat;
+                background-position: 10px 50%;
+                background-size: 8px 8px;
+            }
+        }
     }
 }
 #popupConnect-screen {
