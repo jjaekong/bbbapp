@@ -63,9 +63,9 @@
                 </ul>
                 <div class="news">
                     <p>
-                        <a href="/news_list.php">bbb 프로보노는 소통의 세상을 만들기 위해 지식•재능 나눔...</a>
+                        <a href="/news_list.php"  data-transition="pop">bbb 프로보노는 소통의 세상을 만들기 위해 지식•재능 나눔...</a>
                     </p>
-                    <a href="/news_list.php" class="ui-link btn-more">목록보기</a>
+                    <a href="/news_list.php" class="ui-link btn-more" data-transition="pop">목록보기</a>
                 </div>
             </div>
         </div>

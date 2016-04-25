@@ -253,6 +253,8 @@ textarea.ui-input-text {
     border-bottom: 0; }
   .main #nav ul li:nth-of-type(1) a, .main #nav ul li:nth-of-type(4) a {
     border-left: 0; }
+  .main #nav ul li:nth-of-type(3) a, .main #nav ul li:nth-of-type(6) a {
+    border-right: 0; }
   .main #nav ul li:nth-of-type(1) a {
     background-image: url(/images/ico_namecard.png);
     background-size: 46px auto;
@@ -294,16 +296,17 @@ textarea.ui-input-text {
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
-        padding-left: 35px;
+        padding-left: 20px;
         border: 0;
         background-color: #fff;
         background-image: url(/images/ico_paper_orange.png);
         background-size: auto 14px;
         background-repeat: no-repeat;
-        background-position: 15px 50%;
+        background-position: 0 50%;
         font-size: 12px;
         line-height: 35px;
-        letter-spacing: -1px; }
+        letter-spacing: -1px;
+        text-align: left; }
     .main #nav .news > .btn-more {
       position: absolute;
       top: 10px;
