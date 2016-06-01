@@ -16,9 +16,9 @@
                                 </p>
                             </div>
                             <div class="ui-block-b">
-                                <p class="profile">
+                                <a href="#profileUpload" class="profile" data-rel="popup" data-transition="pop">
                                     <img src="https://pbs.twimg.com/profile_images/665847983519305728/7-NtTUP6_400x400.jpg" alt="공수아 프로필">
-                                </p>
+                                </a>
                             </div>
                             <div class="ui-block-c">
                                 <p class="rate">
@@ -80,6 +80,19 @@
             </ul>
             <hr>
             <a href="#" class="ui-btn btn-close" data-rel="back" data-transition="flow"><img src="/images/btn_close.png" alt="닫기"></a>
+        </div>
+        
+        <div data-role="popup" id="profileUpload" data-overlay-theme="b">
+            <form>
+                <label for="profile-file">사진업로드</label>
+                <input type="file" name="#" id="profile-file">
+                <div class="btn-area">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a"><button type="submit" class="btn-primary">확인</button></div>
+                        <div class="ui-block-b"><a href="#" class="ui-btn btn-of-form" data-rel="back">취소</a></div>
+                    </div>
+                </div>
+            </form>
         </div>
         
         <script>

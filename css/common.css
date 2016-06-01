@@ -27,6 +27,9 @@ ul, ol {
 figure {
   margin: 0; }
 
+.ui-header .ui-title {
+  margin: 0 20%; }
+
 .ui-content {
   padding: 0; }
 
@@ -172,6 +175,7 @@ textarea.ui-input-text {
       .main #header .overview .count {
         letter-spacing: -1px; }
       .main #header .overview .profile {
+        display: block;
         margin-top: 70px; }
         .main #header .overview .profile img {
           display: block;
@@ -378,6 +382,38 @@ textarea.ui-input-text {
     #popupConnect .btn-close img {
       width: 100%;
       height: 100%; }
+
+#profileUpload-screen {
+  opacity: .85; }
+
+#profileUpload {
+  padding: 15px 15px 20px;
+  box-shadow: none;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f2efeb; }
+  #profileUpload label {
+    margin-bottom: 15px;
+    color: #ff7214;
+    font-size: 16px;
+    font-weight: bold; }
+  #profileUpload .ui-input-text {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 23px; }
+    #profileUpload .ui-input-text input {
+      padding: 0; }
+  #profileUpload .btn-area {
+    padding-top: 20px;
+    border-top: 1px solid #ddd6cd; }
+    #profileUpload .btn-area .ui-block-a {
+      padding-right: 5px; }
+    #profileUpload .btn-area .ui-block-b {
+      padding-left: 5px; }
+    #profileUpload .btn-area .ui-btn {
+      width: 100%;
+      height: 45px;
+      line-height: 45px; }
 
 .sub {
   background-color: #fff; }
@@ -1193,6 +1229,21 @@ textarea.ui-input-text {
       text-transform: uppercase;
       letter-spacing: -1px;
       font-weight: normal; }
+.mypage.request-cert .request-cert-form textarea.ui-input-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 23px; }
+.mypage.request-cert .request-cert-form .btn-area {
+  padding: 20px 15px; }
+  .mypage.request-cert .request-cert-form .btn-area .ui-block-a {
+    padding-right: 10px; }
+  .mypage.request-cert .request-cert-form .btn-area .ui-block-b {
+    padding-left: 10px; }
+  .mypage.request-cert .request-cert-form .btn-area .ui-btn {
+    width: 100%;
+    height: 45px;
+    line-height: 45px; }
 
 .find {
   background-color: #f2efeb; }
